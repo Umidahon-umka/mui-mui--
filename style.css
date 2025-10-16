@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    animation-name: animatsiya;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    /* animation-delay: 3s; */
+}
+
+@keyframes animatsiya {
+    0% {
+        background-color: red;
+        top: 0;
+        left: 0;
+    }
+
+    25% {
+        background-color: green;
+        left: 500px;
+        top: 0;
+
+    }
+
+    50% {
+        background-color: yellow;
+        left: 500px;
+        top: 300px;
+    }
+
+    75% {
+        background-color: purple;
+        left: 0;
+        top: 300px;
+    }
+
+    100% {
+        background-color: blue;
+        top: 0;
+        left: 0;
+
+    }
+}
